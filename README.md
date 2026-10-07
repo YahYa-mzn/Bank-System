@@ -1,10 +1,10 @@
-# Bank System
+# 🏦 Bank System
 
 ### Console Banking Application with Users, Permissions, Transactions & Currency Exchange
 
 **A full-featured console application for managing bank clients, users, transactions and currency exchange — built with Object-Oriented C++ and plain text files as the database**
 
-`C++` `OOP` `STL` `File I/O` `Console`
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white) ![OOP](https://img.shields.io/badge/OOP-8E44AD?style=for-the-badge) ![STL](https://img.shields.io/badge/STL-E67E22?style=for-the-badge) ![File I/O](https://img.shields.io/badge/File%20I%2FO-27AE60?style=for-the-badge) ![Console](https://img.shields.io/badge/Console-2C3E50?style=for-the-badge&logo=windowsterminal&logoColor=white)
 
 **Version 1.0** — by [Yahya Mazini](https://github.com/YahYa-mzn)
 
@@ -12,7 +12,7 @@
 
 ## About This Project
 
-This is my **first Object-Oriented Programming project**. It is a complete implementation of a **Bank System** based on the C++ OOP course by **Mohammed Abu Hadhoud ([Programming Advices](https://www.youtube.com/@ProgrammingAdvices))**.
+This is my **first Object-Oriented Programming project**. It is a complete implementation of a **Bank System** based on **Course 11 by Mohammed Abu Hadhoud ([Programming Advices](https://www.youtube.com/@ProgrammingAdvices))**.
 
 The goal was to take everything learned in the course and put it into one real application: designing classes, thinking about the business rules of a bank, and using **text files as a database**, all in a clean OOP structure.
 
@@ -34,40 +34,9 @@ It covers: client management, user management with a bitmask permission system, 
 
 ### Development Timeline
 
-**Version 1.0 — ~10–15 days** <!-- TODO: confirm exact duration and hours per day -->
+**Version 1.0 — ~10–15 days**, working roughly 4–8 hours per day.
 
 Built while following the course, practicing every concept as it was taught and applying it directly to the project instead of only watching.
-
----
-
-## Screenshots
-
-> Add your screenshots to the repository root (or a `screenshots/` folder) and keep the file names below, or update the paths.
-
-### Login Screen
-
-![Login](screenshot_login.png)
-> Username/password login with a maximum of **3 attempts** before the user is locked out.
-
-### Main Menu
-
-![Main Menu](screenshot_main_menu.png)
-> 11 options, each one protected by the permissions of the logged-in user.
-
-### Client List
-
-![Client List](screenshot_client_list.png)
-> Formatted table of all clients with account number, name, phone, email, PIN and balance.
-
-### Transactions & Transfer Log
-
-![Transfer Log](screenshot_transfer_log.png)
-> Every transfer is recorded with date/time, source and destination accounts, amount, both balances and the user who performed it.
-
-### Currency Calculator
-
-![Currency Calculator](screenshot_currency_calculator.png)
-> Convert between any two currencies using USD as the pivot.
 
 ---
 
@@ -214,7 +183,7 @@ Every object carries a private **mode** that decides what `Save()` does, so the 
 
 ---
 
-## Features & Services
+## ✨ Features & Services
 
 ### Client Management
 
@@ -362,7 +331,7 @@ Bank-System/
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -377,23 +346,17 @@ Bank-System/
 git clone https://github.com/YahYa-mzn/Bank-System.git
 ```
 
-2. **Open the project** in Visual Studio (or create an empty C++ Console project and add all files).
+2. **Open the solution** — double-click the `.sln` file in Visual Studio.
 
-3. **Keep the data files next to the executable's working directory**
+3. **Run** — build and run (`F5` / `Ctrl + F5`). The data files (`Users.txt`, `Clients.txt`, `Currencies.txt`) are included, and `LoginRegister.txt` / `TransferLog.txt` are created automatically on first use.
 
-   - `Users.txt`, `Clients.txt` and `Currencies.txt` must exist in the working directory (the project folder when running from Visual Studio).
-   - `LoginRegister.txt` and `TransferLog.txt` are created automatically on first use.
-
-4. **Run**
-
-   - Build and run (`F5` / `Ctrl + F5`)
-   - Default credentials: `Admin` / `1234`
+4. **Log in** with the default credentials: `Admin` / `1234`
 
 > In `Users.txt` passwords are stored shifted by a key of 3, so the stored value of `1234` looks like `4567`.
 
 ---
 
-## Known Limitations & Planned Improvements
+## ⚠️ Known Limitations & Planned Improvements
 
 This was my first OOP project, and reviewing it today highlights what I would do differently:
 
@@ -412,13 +375,11 @@ This was my first OOP project, and reviewing it today highlights what I would do
 
 - Hash passwords and PINs
 - Replace text files with a real database (the direction taken in my C# + SQL Server projects that followed)
-- Add unit tests for the domain classes
-- Make the project portable (standard C++ properties, no `system()` calls)
 
 ---
 
 ## Credits
 
-This project is based on the C++ OOP course by **Mohammed Abu Hadhoud** from [Programming Advices](https://www.youtube.com/@ProgrammingAdvices).
+This project is based on **Course 11 by Mohammed Abu Hadhoud** from [Programming Advices](https://www.youtube.com/@ProgrammingAdvices).
 
 Built by **Yahya Mazini** — [GitHub](https://github.com/YahYa-mzn)
